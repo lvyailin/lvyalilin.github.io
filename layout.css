@@ -1,0 +1,16 @@
+body{margin:Opx;}
+.frame{
+	width:100%;
+	display:flex;
+	background-color:grey;
+	margin-left:auto;margin-right:auto;
+    justify-content:center;
+	align-items:center;
+	
+}
+.left{width:600px;
+background-color:blue;
+}
+.right{width:600px;
+background-color:yellow;
+}
