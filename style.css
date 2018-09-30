@@ -1,0 +1,55 @@
+.title{
+	text-align :center;font:30px;font-weight:bold;/*字体加粗*/
+	margin-bottom:10px;/*标题与格子之间的距离*/
+}
+.menu-desktop{display:block}
+
+
+.frame{
+	
+	display:flex;
+	justify-content:center;
+	align-items: flex-start;
+}
+	/*宽度>1200px
+	总宽度固定在1200px
+*/
+.box{
+	width:280px;margin:10 px;
+background-color:red;
+/*阶层式选择器，搭配其他选择器使用
+	外层选择器>内层选择器{}*/
+}
+.box>img{
+		width:100%;
+	}
+
+	/*css3 media query*/
+@media(max-width:1200px){
+		
+		/*如果荧幕小于1200px，套用这个区块的设定*/
+	.frame{
+		flex-wrap:wrap
+	}
+	.box{
+		width:45%;
+		
+	}
+}
+
+
+		/*如果荧幕小于500px，套用这个区块的设定*/
+		.title{
+		font-size:24px;
+	}
+	
+	.box{
+		width:90%;
+		
+	}
+	.menu-desktop{display:none;}
+
+	.menu-mobile{display:none;}
+	
+	
+	
