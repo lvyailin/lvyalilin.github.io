@@ -1,0 +1,30 @@
+nav{
+display:flex;}
+.trigger{
+	display:none;
+
+}
+.title{
+margin-right:20px;
+ 
+ }
+ .menu{
+	 display:flex;
+}
+ .menu>.item{
+	 margin:Opx 5px;
+ }
+ 
+@media (max-width:500px){
+	 .trigger{
+	 display:block;
+	 }
+	.menu{
+	display:block;
+	 position:fixed;left:-200px;top:Opx;
+	 width:200px;height:100%;
+	 background-color:#dddddd;
+	 }
+	 
+ }
+ 
